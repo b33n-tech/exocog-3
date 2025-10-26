@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Stack 1 - Gestion des tâches</title>
+<link rel="stylesheet" href="stack1.css">
+</head>
+<body>
+  <h1>Stack 1 - Gestion des tâches</h1>
+
+  <div class="task-entry">
+    <input id="taskInput" placeholder="Nouvelle tâche…">
+    <button id="addBtn">Ajouter</button>
+  </div>
+
+  <div class="buttons-row">
+    <button id="archiveBtn">📥 Archiver JSON</button>
+  </div>
+
+  <ul id="tasksContainer"></ul>
+
+  <div class="json-paste-section">
+    <h3>Coller JSON ici :</h3>
+    <textarea id="jsonPasteBox" placeholder="Collez votre JSON ici…" rows="6"></textarea>
+    <button id="pasteDownloadBtn">Envoyer & Télécharger JSON</button>
+  </div>
+
+  <div class="prompts-section">
+    <h3>Prompts vers LLM :</h3>
+    <select id="llmSelect">
+      <option value="https://chat.openai.com/">GPT</option>
+      <option value="https://www.perplexity.ai/">Perplexity</option>
+      <option value="https://claude.ai/">Claude</option>
+      <option value="https://www.mistral.ai/">Mistral</option>
+    </select>
+    <div id="promptsContainer"></div>
+    <div id="copiedMsg" style="display:none;color:green;">✅ Copié et LLM ouvert !</div>
+  </div>
+
+  <input type="file" id="uploadJson" accept=".json" style="margin-top:10px;">
+  
+  <script src="stack1.js"></script>
+</body>
+</html>
