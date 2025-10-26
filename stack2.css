@@ -1,0 +1,9 @@
+body { font-family: 'Inter', Arial, sans-serif; background:#f0f2f5; margin:20px; color:#333; }
+h1,h2 { text-align:center; }
+.module { background:white; padding:15px; margin:15px 0; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+ul,table { width:100%; margin-top:10px; }
+input[type="checkbox"] { margin-right:8px; }
+table, th, td { border:1px solid #ddd; border-collapse:collapse; padding:6px; }
+th { background:#00aaff; color:white; }
+button { margin-top:8px; padding:6px 12px; border:none; border-radius:6px; background:#00aaff; color:white; cursor:pointer;}
+button:hover{opacity:0.9;}
